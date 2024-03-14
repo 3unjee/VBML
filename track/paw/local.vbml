@@ -44,11 +44,11 @@ templates:
         source: /deploy/paw.mp4
 
 DOG: |
-    IF (EQUAL argument "1")
+    IF (EQUAL argument '1')
         RETURN "paw2,paw1"
-    ELIF (EQUAL argument "2")
+    ELIF (EQUAL argument '2')
         RETURN "paw3,paw1"
-    ELIF (EQUAL argument "3")
+    ELIF (EQUAL argument '3')
         RETURN "paw4,paw1"
     ELSE
         RETURN
