@@ -5,104 +5,51 @@
 
 type: interactive
 
-title: Swap the road
+title: Patrol interactive
 
-cover: /road.png
+cover: /paw.jpg
 
-context: road
+context: paw,paw1
 
 source:
-    hub:
-        id: road
+    track:
+        id: paw
         at: 0:00
-        duration: 0:24
-        template: road
+        end: 0:04
+        template: paw
     hub:
-        id: road1
-        at: 0:25
-        duration: 0:24
-        template: road
-    hub:
-        id: road2
-        at: 0:50
-        duration: 0:24
-        template: road
-    hub:
-        id: road3
-        at: 1:15
-        duration: 0:24
-        template: road
-    hub:
-        id: road4
-        at: 1:40
-        duration: 0:24
-        template: road
-    hub:
-        id: road5
-        at: 2:05
-        duration: 0:24
-        template: road
-    hub:
-        id: road6
-        at: 2:30
-        duration: 0:24
-        template: road
-    hub:
-        id: road7
-        at: 2:55
-        duration: 0:24
-        template: road
-    hub:
-        id: road8
-        at: 3:20
-        duration: 0:24
-        template: road
-    hub:
-        id: road9
-        at: 3:45
-        duration: 0:24
-        template: road
-    hub:
-        id: road10
-        at: 4:10
-        duration: 0:24
-        template: road
-    hub:
-        id: road11
-        at: 4:35
-        duration: 0:24
-        template: road
+        id: paw1
+        duration: 0:32
+        source: /deploy/paw2.mp4
+        ambient: https://www.youtube.com/watch?v=6Wh2eKxAfKI
+    track:
+        id: paw2
+        at: 0:05
+        end: 1:03
+        template: paw
+    track:
+        id: paw3
+        at: 1:03
+        end: 1:13
+        template: paw
+    track:
+        id: paw4
+        at: 1:13
+        end: 1:47
+        template: paw
 
 templates:
     template:
-        id: road
-        source: /deploy/road.mp4
-        ambient: https://www.youtube.com/watch?v=4xDzrJKXOOY
+        id: paw
+        source: /deploy/paw.mp4
 
-SWAP: |
-    IF (EQUAL id "road")
-        SET id "road1"
-    ELIF (EQUAL id "road1")
-        SET id "road2"
-    ELIF (EQUAL id "road2")
-        SET id "road3"
-    ELIF (EQUAL id "road3")
-        SET id "road4"
-    ELIF (EQUAL id "road4")
-        SET id "road5"
-    ELIF (EQUAL id "road5")
-        SET id "road6"
-    ELIF (EQUAL id "road6")
-        SET id "road7"
-    ELIF (EQUAL id "road7")
-        SET id "road8"
-    ELIF (EQUAL id "road8")
-        SET id "road9"
-    ELIF (EQUAL id "road9")
-        SET id "road10"
-    ELIF (EQUAL id "road10")
-        SET id "road11"
-    ELIF (EQUAL id "road11")
-        SET id "road"
+DOG: |
+    IF (EQUAL argument "1")
+        RETURN "paw2,paw1"
+    ELIF (EQUAL argument "2")
+        RETURN "paw3,paw1"
+    ELIF (EQUAL argument "3")
+        RETURN "paw4,paw1"
+    ELSE
+        RETURN
     FI
-    RETURN (LIST "swap" id)
