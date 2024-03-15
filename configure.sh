@@ -94,5 +94,6 @@ if [ $1 = "paw" ]; then
 
     path="$PWD/track/paw/dist/content/extra"
 
-    cp "$paw_extra"/video/*.mp4 "$path"
+    cp "$paw_extra"/video/*.mp4  "$path"
+    cp "$paw_extra"/audio/*.webm "$path"
 fi

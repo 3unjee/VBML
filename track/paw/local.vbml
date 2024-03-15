@@ -21,7 +21,7 @@ source:
         id: paw1
         duration: 0:16
         source: /deploy/paw2.mp4
-        ambient: https://www.youtube.com/watch?v=6Wh2eKxAfKI
+        ambient: /deploy/paw3.mp4
     track:
         id: paw2
         at: 0:05
