@@ -84,6 +84,14 @@ if [ $1 = "paw" ]; then
     cp "$paw"/dist/content/*.png "$path"
     cp "$paw"/dist/content/*.mp4 "$path"
 
+    path="$PWD/track/paw/dist/upscale"
+
+    cp "$paw"/dist/upscale/*.jpeg "$path"
+
+    path="$PWD/track/paw/dist/upscale/base"
+
+    cp "$paw"/dist/upscale/base/*.png "$path"
+
     path="$PWD/track/paw/dist/content/extra"
 
     cp "$paw_extra"/video/*.mp4 "$path"
