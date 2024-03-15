@@ -7,16 +7,23 @@ set -e
 
 assets="/c/users/bunjee/OneDrive/assets"
 
-road="$assets/road"
+road="$assets/track/road"
+
+paw="$assets/track/paw"
+
+paw-extra="$assets/extra/track/paw"
 
 #--------------------------------------------------------------------------------------------------
 # Syntax
 #--------------------------------------------------------------------------------------------------
 
-if [ $# != 1 ] || [ $1 != "all" -a $1 != "road" -a ]; then
+if [ $# != 1 ] || [ $1 != "all"  -a \
+                    $1 != "road" -a \
+                    $1 != "paw" ]; then
 
     echo "Usage: configure <all>"
     echo "                 <road>"
+    echo "                 <paw>"
 
     exit 1
 fi
@@ -55,4 +62,29 @@ if [ $1 = "road" ]; then
 
     cp "$road"/dist/content/*.png "$path"
     cp "$road"/dist/content/*.mp4 "$path"
+fi
+
+#--------------------------------------------------------------------------------------------------
+# paw
+#--------------------------------------------------------------------------------------------------
+
+if [ $1 = "paw" ]; then
+
+    path="$PWD/track/paw/deploy"
+
+    cp "$paw"/deploy/*.mp4 "$path"
+
+    path="$PWD/track/paw/dist"
+
+    cp "$paw"/dist/*.kra "$path"
+    cp "$paw"/dist/*.png "$path"
+
+    path="$PWD/track/paw/dist/content"
+
+    cp "$paw"/dist/content/*.png "$path"
+    cp "$paw"/dist/content/*.mp4 "$path"
+
+    path="$PWD/track/paw/dist/content/extra"
+
+    cp "$paw-extra"/video/*.mp4 "$path"
 fi

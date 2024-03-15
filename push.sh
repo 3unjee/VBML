@@ -9,13 +9,17 @@ assets="/c/users/bunjee/OneDrive/assets"
 
 road="$PWD/track/road"
 
+paw="$PWD/track/paw"
+
 #--------------------------------------------------------------------------------------------------
 # Syntax
 #--------------------------------------------------------------------------------------------------
 
-if [ $# != 1 ] || [ $1 != "road" ]; then
+if [ $# != 1 ] || [ $1 != "road" -a \
+                    $1 != "paw" ]; then
 
     echo "Usage: push <road>"
+    echo "            <paw>"
 
     exit 1
 fi
@@ -46,4 +50,28 @@ if [ $1 = "road" ]; then
 
     cp "$road"/dist/content/*.png "$path"
     cp "$road"/dist/content/*.mp4 "$path"
+fi
+
+#--------------------------------------------------------------------------------------------------
+# paw
+#--------------------------------------------------------------------------------------------------
+
+if [ $1 = "paw" ]; then
+
+    path="$assets/track/paw/deploy"
+    mkdir -p "$path"
+
+    cp "$paw"/deploy/*.mp4 "$path"
+
+    path="$assets/track/paw/dist"
+    mkdir -p "$path"
+
+    cp "$paw"/dist/*.kra "$path"
+    cp "$paw"/dist/*.png "$path"
+
+    path="$assets/track/paw/dist/content"
+    mkdir -p "$path"
+
+    cp "$paw"/dist/content/*.png "$path"
+    cp "$paw"/dist/content/*.mp4 "$path"
 fi

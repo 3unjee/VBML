@@ -19,7 +19,7 @@ source:
         template: paw
     hub:
         id: paw1
-        duration: 0:32
+        duration: 0:16
         source: /deploy/paw2.mp4
         ambient: https://www.youtube.com/watch?v=6Wh2eKxAfKI
     track:
