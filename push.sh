@@ -74,4 +74,14 @@ if [ $1 = "paw" ]; then
 
     cp "$paw"/dist/content/*.png "$path"
     cp "$paw"/dist/content/*.mp4 "$path"
+
+    path="$assets/track/paw/dist/upscale"
+    mkdir -p "$path"
+
+    cp "$paw"/dist/upscale/*.jpeg "$path"
+
+    path="$assets/track/paw/dist/upscale/base"
+    mkdir -p "$path"
+
+    cp "$paw"/dist/upscale/base/*.png "$path"
 fi
