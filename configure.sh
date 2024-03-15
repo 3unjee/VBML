@@ -11,7 +11,7 @@ road="$assets/track/road"
 
 paw="$assets/track/paw"
 
-paw-extra="$assets/extra/track/paw"
+paw_extra="$assets/extra/track/paw"
 
 #--------------------------------------------------------------------------------------------------
 # Syntax
@@ -86,5 +86,5 @@ if [ $1 = "paw" ]; then
 
     path="$PWD/track/paw/dist/content/extra"
 
-    cp "$paw-extra"/video/*.mp4 "$path"
+    cp "$paw_extra"/video/*.mp4 "$path"
 fi
