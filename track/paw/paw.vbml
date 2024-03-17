@@ -19,23 +19,24 @@ source:
         template: paw
     hub:
         id: paw1
-        duration: 0:16
-        source: https://odysee.com/paw2:3
+        at: 0:05
+        end: 0:21
         ambient: https://www.youtube.com/watch?v=BmpuIiC9Q5A
+        template: paw
     track:
         id: paw2
-        at: 0:05
-        end: 1:03
+        at: 0:21
+        end: 1:19
         template: paw
     track:
         id: paw3
-        at: 1:03
-        end: 1:13
+        at: 1:19
+        end: 1:29
         template: paw
     track:
         id: paw4
-        at: 1:13
-        end: 1:47
+        at: 1:29
+        end: 2:03
         template: paw
 
 templates:
