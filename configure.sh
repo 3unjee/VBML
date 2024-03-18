@@ -39,6 +39,7 @@ if [ "$REPLY" != "yes" ]; then exit 1; fi
 if [ $1 = "all" ]; then
 
     sh configure.sh road
+    sh configure.sh paw
 
     exit 0
 fi
