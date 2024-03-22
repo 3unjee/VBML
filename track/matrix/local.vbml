@@ -5,52 +5,49 @@
 
 type: interactive
 
-title: Patrol interactive
+title: Pick the pill
 
-cover: /paw.jpg
+cover: /matrix.jpg
 
-context: paw,paw1
+context: intro,pill
 
 source:
     track:
-        id: paw
-        at: 0:00
-        end: 0:04
-        template: paw
+        id: intro
+        duration: 0:32.700
+        template: matrix
     hub:
-        id: paw1
-        at: 0:05
-        end: 0:21
-        ambient: /deploy/paw3.mp4
-        template: paw
+        id: pill
+        at: 0:33
+        end: 0:54
+        template: matrix
     track:
-        id: paw2
-        at: 0:21
-        end: 1:19
-        template: paw
+        id: red
+        at: 0:55
+        end: 3:54
+        template: matrix
     track:
-        id: paw3
-        at: 1:19
-        end: 1:29
-        template: paw
+        id: blue
+        at: 3:55
+        end: 10:34
+        template: matrix
     track:
-        id: paw4
-        at: 1:29
-        end: 2:03
-        template: paw
+        id: vox
+        duration: 0:06
+        source: /deploy/vox.png
+    track:
+        id: vox2
+        duration: 0:04
+        source: /deploy/vox2.png
 
 templates:
     template:
-        id: paw
-        source: /deploy/paw.mp4
+        id: matrix
+        source: /deploy/matrix.mp4
 
-DOG: |
-    IF (EQUAL argument '1')
-        RETURN "paw2,paw1"
-    ELIF (EQUAL argument '2')
-        RETURN "paw3,paw1"
-    ELIF (EQUAL argument '3')
-        RETURN "paw4,paw1"
+PILL: |
+    IF (EQUAL argument 'red')
+        RETURN "red,vox,vox2"
     ELSE
-        RETURN
+        RETURN "blue,vox,vox2"
     FI

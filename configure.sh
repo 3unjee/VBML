@@ -11,6 +11,8 @@ road="$assets/track/road"
 
 paw="$assets/track/paw"
 
+matrix="$assets/track/matrix"
+
 paw_extra="$assets/extra/track/paw"
 
 #--------------------------------------------------------------------------------------------------
@@ -19,11 +21,13 @@ paw_extra="$assets/extra/track/paw"
 
 if [ $# != 1 ] || [ $1 != "all"  -a \
                     $1 != "road" -a \
-                    $1 != "paw" ]; then
+                    $1 != "paw" -a \
+                    $1 != "matrix" ]; then
 
     echo "Usage: configure <all>"
     echo "                 <road>"
     echo "                 <paw>"
+    echo "                 <matrix>"
 
     exit 1
 fi
@@ -97,4 +101,37 @@ if [ $1 = "paw" ]; then
 
     cp "$paw_extra"/video/*.mp4  "$path"
     cp "$paw_extra"/audio/*.webm "$path"
+fi
+
+#--------------------------------------------------------------------------------------------------
+# matrix
+#--------------------------------------------------------------------------------------------------
+
+if [ $1 = "matrix" ]; then
+
+    path="$PWD/track/matrix/deploy"
+
+    cp "$matrix"/deploy/*.mp4 "$path"
+
+    path="$PWD/track/matrix/dist"
+
+    cp "$matrix"/dist/*.kra "$path"
+    cp "$matrix"/dist/*.png "$path"
+
+    path="$PWD/track/matrix/dist/content"
+
+    cp "$matrix"/dist/content/*.png "$path"
+    cp "$matrix"/dist/content/*.mp4 "$path"
+
+    path="$PWD/track/matrix/dist/upscale"
+
+    cp "$matrix"/dist/upscale/*.jpeg "$path"
+
+    path="$PWD/track/matrix/dist/upscale/base"
+
+    cp "$matrix"/dist/upscale/base/*.png "$path"
+
+    path="$PWD/track/matrix/dist/content/extra"
+
+    cp "$matrix_extra"/video/*.mp4 "$path"
 fi

@@ -11,15 +11,19 @@ road="$PWD/track/road"
 
 paw="$PWD/track/paw"
 
+paw="$PWD/track/matrix"
+
 #--------------------------------------------------------------------------------------------------
 # Syntax
 #--------------------------------------------------------------------------------------------------
 
 if [ $# != 1 ] || [ $1 != "road" -a \
-                    $1 != "paw" ]; then
+                    $1 != "paw" -a \
+                    $1 != "matrix" ]; then
 
     echo "Usage: push <road>"
     echo "            <paw>"
+    echo "            <matrix>"
 
     exit 1
 fi
@@ -84,4 +88,38 @@ if [ $1 = "paw" ]; then
     mkdir -p "$path"
 
     cp "$paw"/dist/upscale/base/*.png "$path"
+fi
+
+#--------------------------------------------------------------------------------------------------
+# matrix
+#--------------------------------------------------------------------------------------------------
+
+if [ $1 = "matrix" ]; then
+
+    path="$assets/track/matrix/deploy"
+    mkdir -p "$path"
+
+    cp "$matrix"/deploy/*.mp4 "$path"
+
+    path="$assets/track/matrix/dist"
+    mkdir -p "$path"
+
+    cp "$matrix"/dist/*.kra "$path"
+    cp "$matrix"/dist/*.png "$path"
+
+    path="$assets/track/matrix/dist/content"
+    mkdir -p "$path"
+
+    cp "$matrix"/dist/content/*.png "$path"
+    cp "$matrix"/dist/content/*.mp4 "$path"
+
+    path="$assets/track/matrix/dist/upscale"
+    mkdir -p "$path"
+
+    cp "$matrix"/dist/upscale/*.jpeg "$path"
+
+    path="$assets/track/matrix/dist/upscale/base"
+    mkdir -p "$path"
+
+    cp "$matrix"/dist/upscale/base/*.png "$path"
 fi
