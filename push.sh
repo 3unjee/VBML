@@ -11,7 +11,7 @@ road="$PWD/track/road"
 
 paw="$PWD/track/paw"
 
-paw="$PWD/track/matrix"
+matrix="$PWD/track/matrix"
 
 #--------------------------------------------------------------------------------------------------
 # Syntax
