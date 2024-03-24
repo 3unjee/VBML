@@ -34,16 +34,16 @@ source:
     track:
         id: vox
         duration: 0:06
-        source: /deploy/vox.png
+        source: https://raw.githubusercontent.com/3unjee/VBML/master/track/matrix/deploy/vox.png
     track:
         id: vox2
         duration: 0:04
-        source: /deploy/vox2.png
+        source: https://raw.githubusercontent.com/3unjee/VBML/master/track/matrix/deploy/vox2.png
 
 templates:
     template:
         id: matrix
-        source: /deploy/matrix.mp4
+        source: https://odysee.com/matrix:69
 
 PILL: |
     IF (EQUAL argument 'red')
