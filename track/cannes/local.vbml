@@ -1,0 +1,91 @@
+# vbml 1.0.6
+#--------------------------------------------------------------------------------------------------
+# Visit https://omega.gg/vox for more informations.
+#--------------------------------------------------------------------------------------------------
+
+type: interactive
+
+title: Festival harassment
+
+cover: /cannes.jpg
+
+context: brad,brad2
+
+source:
+    #----------------------------------------------------------------------------------------------
+    # Brad
+    #----------------------------------------------------------------------------------------------
+    track:
+        id: brad
+        duration: 0:08
+        template: clap
+    hub:
+        id: brad2
+        at: 0:08
+        end: 0:24
+        template: clap
+    track:
+        id: brad3
+        at: 0:24
+        end: 0:39
+        template: clap
+    #----------------------------------------------------------------------------------------------
+    # Leo
+    #----------------------------------------------------------------------------------------------
+    track:
+        id: leo
+        at: 0:39
+        end: 0:42
+        template: clap
+    hub:
+        id: leo2
+        at: 0:42
+        end: 1:14
+        template: clap
+    track:
+        id: leo3
+        at: 1:14
+        end: 1:26
+        template: clap
+    #----------------------------------------------------------------------------------------------
+    # Quentin
+    #----------------------------------------------------------------------------------------------
+    track:
+        id: quentin
+        at: 1:26
+        end: 1:35
+        template: clap
+    hub:
+        id: quentin2
+        at: 1:35
+        end: 2:07
+        template: clap
+    track:
+        id: quentin3
+        at: 2:07
+        end: 2:27
+        template: clap
+
+templates:
+    template:
+        id: clap
+        source: /deploy/cannes.mp4
+        ambient: /deploy/cannes2.mp4
+
+ZOOM: |
+    IF (EQUAL argument "brad")
+        RETURN "brad3,leo,leo2"
+    ELIF (EQUAL argument "leo")
+        RETURN "leo3,quentin,quentin2"
+    ELIF (EQUAL argument "quentin")
+        RETURN "quentin3,brad,brad2"
+    FI
+
+EXIT: |
+    IF (EQUAL argument "brad")
+        RETURN "leo,leo2"
+    ELIF (EQUAL argument "leo")
+        RETURN "quentin,quentin2"
+    ELIF (EQUAL argument "quentin")
+        RETURN "brad,brad2"
+    FI

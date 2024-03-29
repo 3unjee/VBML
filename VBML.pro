@@ -9,3 +9,5 @@ OTHER_FILES += configure.sh \
                track/paw/local.vbml \
                track/matrix/matrix.vbml \
                track/matrix/local.vbml \
+               track/cannes/cannes.vbml \
+               track/cannes/local.vbml \
