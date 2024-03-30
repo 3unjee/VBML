@@ -13,6 +13,8 @@ paw="$assets/track/paw"
 
 matrix="$assets/track/matrix"
 
+cannes="$assets/track/cannes"
+
 paw_extra="$assets/extra/track/paw"
 
 matrix_extra="$assets/extra/track/matrix"
@@ -21,15 +23,17 @@ matrix_extra="$assets/extra/track/matrix"
 # Syntax
 #--------------------------------------------------------------------------------------------------
 
-if [ $# != 1 ] || [ $1 != "all"  -a \
-                    $1 != "road" -a \
-                    $1 != "paw" -a \
-                    $1 != "matrix" ]; then
+if [ $# != 1 ] || [ $1 != "all"    -a \
+                    $1 != "road"   -a \
+                    $1 != "paw"    -a \
+                    $1 != "matrix" -a \
+                    $1 != "cannes" ]; then
 
     echo "Usage: configure <all>"
     echo "                 <road>"
     echo "                 <paw>"
     echo "                 <matrix>"
+    echo "                 <cannes>"
 
     exit 1
 fi
@@ -136,4 +140,33 @@ if [ $1 = "matrix" ]; then
     path="$PWD/track/matrix/dist/content/extra"
 
     cp "$matrix_extra"/video/*.mp4 "$path"
+fi
+
+#--------------------------------------------------------------------------------------------------
+# cannes
+#--------------------------------------------------------------------------------------------------
+
+if [ $1 = "cannes" ]; then
+
+    path="$PWD/track/cannes/deploy"
+
+    cp "$cannes"/deploy/*.mp4 "$path"
+
+    path="$PWD/track/cannes/dist"
+
+    cp "$cannes"/dist/*.kra "$path"
+    cp "$cannes"/dist/*.png "$path"
+
+    path="$PWD/track/cannes/dist/content"
+
+    cp "$cannes"/dist/content/*.png "$path"
+    cp "$cannes"/dist/content/*.mp4 "$path"
+
+    path="$PWD/track/cannes/dist/upscale"
+
+    cp "$cannes"/dist/upscale/*.jpeg "$path"
+
+    path="$PWD/track/cannes/dist/upscale/base"
+
+    cp "$cannes"/dist/upscale/base/*.png "$path"
 fi

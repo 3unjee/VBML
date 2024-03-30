@@ -5,49 +5,87 @@
 
 type: interactive
 
-title: Take the Matrix pill
+title: Cannes Festival harassment
 
-cover: https://raw.githubusercontent.com/3unjee/VBML/master/track/matrix/matrix.jpg
+cover: https://raw.githubusercontent.com/3unjee/VBML/master/track/cannes/cannes.jpg
 
-context: intro,pill
+context: brad,brad2
 
 source:
+    #----------------------------------------------------------------------------------------------
+    # Brad
+    #----------------------------------------------------------------------------------------------
     track:
-        id: intro
-        duration: 0:32.700
-        template: matrix
+        id: brad
+        duration: 0:08
+        template: clap
     hub:
-        id: pill
-        at: 0:33
-        end: 0:54
-        template: matrix
+        id: brad2
+        at: 0:08
+        end: 0:24
+        template: clap
     track:
-        id: red
-        at: 0:55
-        end: 3:54
-        template: matrix
+        id: brad3
+        at: 0:24
+        end: 0:39
+        template: clap
+    #----------------------------------------------------------------------------------------------
+    # Leo
+    #----------------------------------------------------------------------------------------------
     track:
-        id: blue
-        at: 3:55
-        end: 10:34
-        template: matrix
+        id: leo
+        at: 0:39
+        end: 0:42
+        template: clap
+    hub:
+        id: leo2
+        at: 0:42
+        end: 1:14
+        template: clap
     track:
-        id: vox
-        duration: 0:06
-        source: https://raw.githubusercontent.com/3unjee/VBML/master/track/matrix/deploy/vox.png
+        id: leo3
+        at: 1:14
+        end: 1:26
+        template: clap
+    #----------------------------------------------------------------------------------------------
+    # Quentin
+    #----------------------------------------------------------------------------------------------
     track:
-        id: vox2
-        duration: 0:04
-        source: https://raw.githubusercontent.com/3unjee/VBML/master/track/matrix/deploy/vox2.png
+        id: quentin
+        at: 1:26
+        end: 1:35
+        template: clap
+    hub:
+        id: quentin2
+        at: 1:35
+        end: 2:07
+        template: clap
+    track:
+        id: quentin3
+        at: 2:07
+        end: 2:17
+        template: clap
 
 templates:
     template:
-        id: matrix
-        source: https://odysee.com/matrix:69
+        id: clap
+        source: /deploy/cannes.mp4
+        ambient: /deploy/cannes2.mp4
 
-PILL: |
-    IF (EQUAL argument 'red')
-        RETURN "red,vox,vox2"
-    ELSE
-        RETURN "blue,vox,vox2"
+ZOOM: |
+    IF (EQUAL argument "brad")
+        RETURN "brad3,leo,leo2"
+    ELIF (EQUAL argument "leo")
+        RETURN "leo3,quentin,quentin2"
+    ELIF (EQUAL argument "quentin")
+        RETURN "quentin3,brad,brad2"
+    FI
+
+EXIT: |
+    IF (EQUAL argument "brad")
+        RETURN "leo,leo2"
+    ELIF (EQUAL argument "leo")
+        RETURN "quentin,quentin2"
+    ELIF (EQUAL argument "quentin")
+        RETURN "brad,brad2"
     FI

@@ -13,17 +13,21 @@ paw="$PWD/track/paw"
 
 matrix="$PWD/track/matrix"
 
+cannes="$PWD/track/cannes"
+
 #--------------------------------------------------------------------------------------------------
 # Syntax
 #--------------------------------------------------------------------------------------------------
 
-if [ $# != 1 ] || [ $1 != "road" -a \
-                    $1 != "paw" -a \
-                    $1 != "matrix" ]; then
+if [ $# != 1 ] || [ $1 != "road"   -a \
+                    $1 != "paw"    -a \
+                    $1 != "matrix" -a \
+                    $1 != "cannes" ]; then
 
     echo "Usage: push <road>"
     echo "            <paw>"
     echo "            <matrix>"
+    echo "            <cannes>"
 
     exit 1
 fi
@@ -122,4 +126,38 @@ if [ $1 = "matrix" ]; then
     mkdir -p "$path"
 
     cp "$matrix"/dist/upscale/base/*.png "$path"
+fi
+
+#--------------------------------------------------------------------------------------------------
+# cannes
+#--------------------------------------------------------------------------------------------------
+
+if [ $1 = "cannes" ]; then
+
+    path="$assets/track/cannes/deploy"
+    mkdir -p "$path"
+
+    cp "$cannes"/deploy/*.mp4 "$path"
+
+    path="$assets/track/cannes/dist"
+    mkdir -p "$path"
+
+    cp "$cannes"/dist/*.kra "$path"
+    cp "$cannes"/dist/*.png "$path"
+
+    path="$assets/track/cannes/dist/content"
+    mkdir -p "$path"
+
+    cp "$cannes"/dist/content/*.png "$path"
+    cp "$cannes"/dist/content/*.mp4 "$path"
+
+    path="$assets/track/cannes/dist/upscale"
+    mkdir -p "$path"
+
+    cp "$cannes"/dist/upscale/*.jpeg "$path"
+
+    path="$assets/track/cannes/dist/upscale/base"
+    mkdir -p "$path"
+
+    cp "$cannes"/dist/upscale/base/*.png "$path"
 fi
