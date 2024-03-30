@@ -69,8 +69,8 @@ source:
 templates:
     template:
         id: clap
-        source: /deploy/cannes.mp4
-        ambient: /deploy/cannes2.mp4
+        source: https://odysee.com/cannes:a
+        ambient: https://www.youtube.com/watch?v=fcKtlS2teAE
 
 ZOOM: |
     IF (EQUAL argument "brad")
