@@ -70,7 +70,7 @@ templates:
     template:
         id: clap
         source: https://odysee.com/cannes:a
-        ambient: https://www.youtube.com/watch?v=fcKtlS2teAE
+        ambient: https://www.youtube.com/watch?v=kPh7Ev9rvOM
 
 ZOOM: |
     IF (EQUAL argument "brad")
