@@ -160,4 +160,9 @@ if [ $1 = "cannes" ]; then
     mkdir -p "$path"
 
     cp "$cannes"/dist/upscale/base/*.png "$path"
+
+    path="$assets/track/cannes/dist/voice/base"
+    mkdir -p "$path"
+
+    cp "$cannes"/dist/voice/base/*.webm "$path"
 fi

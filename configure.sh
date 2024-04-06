@@ -169,4 +169,8 @@ if [ $1 = "cannes" ]; then
     path="$PWD/track/cannes/dist/upscale/base"
 
     cp "$cannes"/dist/upscale/base/*.png "$path"
+
+    path="$PWD/track/cannes/dist/voice/base"
+
+    cp "$cannes"/dist/voice/base/*.webm "$path"
 fi
