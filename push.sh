@@ -66,19 +66,6 @@ if [ -d "$source" ]; then
     cp "$source"/*.mp4 "$path"
 fi
 
-source="$PWD/track/$1/dist/content/extra"
-
-if [ -d "$source" ]; then
-
-    echo "$source"
-
-    path="$assets/track/$1/dist/content/extra"
-    mkdir -p "$path"
-
-    cp "$source"/*.mp4  "$path"
-    cp "$source"/*.webm "$path"
-fi
-
 source="$PWD/track/$1/dist/upscale"
 
 if [ -d "$source" ]; then
@@ -124,5 +111,18 @@ if [ -d "$source" ]; then
     path="$assets/track/$1/dist/voice/base"
     mkdir -p "$path"
 
+    cp "$source"/*.webm "$path"
+fi
+
+source="$PWD/track/$1/dist/content/extra"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
+
+    path="$assets/extra/track/$1"
+    mkdir -p "$path"
+
+    cp "$source"/*.mp4  "$path"
     cp "$source"/*.webm "$path"
 fi

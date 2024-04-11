@@ -7,18 +7,6 @@ set -e
 
 assets="/c/users/bunjee/OneDrive/assets"
 
-road="$assets/track/road"
-
-paw="$assets/track/paw"
-
-matrix="$assets/track/matrix"
-
-cannes="$assets/track/cannes"
-
-paw_extra="$assets/extra/track/paw"
-
-matrix_extra="$assets/extra/track/matrix"
-
 #--------------------------------------------------------------------------------------------------
 # Syntax
 #--------------------------------------------------------------------------------------------------
@@ -50,63 +38,10 @@ if [ $1 = "all" ]; then
 
     sh configure.sh road
     sh configure.sh paw
+    sh configure.sh matrix
+    sh configure.sh cannes
 
     exit 0
-fi
-
-#--------------------------------------------------------------------------------------------------
-# road
-#--------------------------------------------------------------------------------------------------
-
-if [ $1 = "road" ]; then
-
-    path="$PWD/track/road/deploy"
-
-    cp "$road"/deploy/*.mp4 "$path"
-
-    path="$PWD/track/road/dist"
-
-    cp "$road"/dist/*.kra "$path"
-    cp "$road"/dist/*.png "$path"
-
-    path="$PWD/track/road/dist/content"
-
-    cp "$road"/dist/content/*.png "$path"
-    cp "$road"/dist/content/*.mp4 "$path"
-fi
-
-#--------------------------------------------------------------------------------------------------
-# paw
-#--------------------------------------------------------------------------------------------------
-
-if [ $1 = "paw" ]; then
-
-    path="$PWD/track/paw/deploy"
-
-    cp "$paw"/deploy/*.mp4 "$path"
-
-    path="$PWD/track/paw/dist"
-
-    cp "$paw"/dist/*.kra "$path"
-    cp "$paw"/dist/*.png "$path"
-
-    path="$PWD/track/paw/dist/content"
-
-    cp "$paw"/dist/content/*.png "$path"
-    cp "$paw"/dist/content/*.mp4 "$path"
-
-    path="$PWD/track/paw/dist/upscale"
-
-    cp "$paw"/dist/upscale/*.jpeg "$path"
-
-    path="$PWD/track/paw/dist/upscale/base"
-
-    cp "$paw"/dist/upscale/base/*.png "$path"
-
-    path="$PWD/track/paw/dist/content/extra"
-
-    cp "$paw_extra"/video/*.mp4  "$path"
-    cp "$paw_extra"/audio/*.webm "$path"
 fi
 
 source="$assets/track/$1/deploy"
@@ -142,18 +77,6 @@ if [ -d "$source" ]; then
 
     cp "$source"/*.png "$path"
     cp "$source"/*.mp4 "$path"
-fi
-
-source="$assets/track/$1/dist/content/extra"
-
-if [ -d "$source" ]; then
-
-    echo "$source"
-
-    path="$PWD/track/cannes/dist/content/extra"
-
-    cp "$source"/*.mp4  "$path"
-    cp "$source"/*.webm "$path"
 fi
 
 source="$assets/track/$1/dist/upscale"
@@ -197,5 +120,17 @@ if [ -d "$source" ]; then
 
     path="$PWD/track/cannes/dist/voice/base"
 
+    cp "$source"/*.webm "$path"
+fi
+
+source="$assets/extra/track/$1"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
+
+    path="$PWD/track/cannes/dist/content/extra"
+
+    cp "$source"/*.mp4  "$path"
     cp "$source"/*.webm "$path"
 fi
