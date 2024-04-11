@@ -123,6 +123,6 @@ if [ -d "$source" ]; then
     path="$assets/extra/track/$1"
     mkdir -p "$path"
 
-    cp "$source"/*.mp4  "$path"
-    cp "$source"/*.webm "$path"
+    cp "$source"/video/*.mp4  "$path"
+    cp "$source"/audio/*.webm "$path"
 fi

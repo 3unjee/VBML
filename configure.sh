@@ -131,6 +131,6 @@ if [ -d "$source" ]; then
 
     path="$PWD/track/cannes/dist/content/extra"
 
-    cp "$source"/*.mp4  "$path"
-    cp "$source"/*.webm "$path"
+    cp "$source"/video/*.mp4  "$path"
+    cp "$source"/audio/*.webm "$path"
 fi
