@@ -146,31 +146,81 @@ fi
 # cannes
 #--------------------------------------------------------------------------------------------------
 
-if [ $1 = "cannes" ]; then
+source="$assets/track/$1/deploy"
 
-    path="$PWD/track/cannes/deploy"
+if [ -d "$source" ]; then
 
-    cp "$cannes"/deploy/*.mp4 "$path"
+    echo "$source"
 
-    path="$PWD/track/cannes/dist"
+    path="$PWD/track/$1/deploy"
 
-    cp "$cannes"/dist/*.kra "$path"
-    cp "$cannes"/dist/*.png "$path"
+    cp "$source"/*.mp4 "$path"
+fi
+
+source="$assets/track/$1/dist"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
+
+    path="$PWD/track/$1/dist"
+
+    cp "$source"/*.kra "$path"
+    cp "$source"/*.png "$path"
+fi
+
+source="$assets/track/$1/dist/content"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
 
     path="$PWD/track/cannes/dist/content"
 
-    cp "$cannes"/dist/content/*.png "$path"
-    cp "$cannes"/dist/content/*.mp4 "$path"
+    cp "$source"/*.png "$path"
+    cp "$source"/*.mp4 "$path"
+fi
+
+source="$assets/track/$1/dist/upscale"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
 
     path="$PWD/track/cannes/dist/upscale"
 
-    cp "$cannes"/dist/upscale/*.jpeg "$path"
+    cp "$source"/*.jpeg "$path"
+fi
+
+source="$assets/track/$1/dist/upscale/base"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
 
     path="$PWD/track/cannes/dist/upscale/base"
 
-    cp "$cannes"/dist/upscale/base/*.png "$path"
+    cp "$source"/*.png "$path"
+fi
+
+source="$assets/track/$1/dist/voice"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
+
+    path="$PWD/track/cannes/dist/voice"
+
+    cp "$source"/*.mp3 "$path"
+fi
+
+source="$assets/track/$1/dist/voice/base"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
 
     path="$PWD/track/cannes/dist/voice/base"
 
-    cp "$cannes"/dist/voice/base/*.webm "$path"
+    cp "$source"/*.webm "$path"
 fi

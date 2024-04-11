@@ -7,14 +7,6 @@ set -e
 
 assets="/c/users/bunjee/OneDrive/assets"
 
-road="$PWD/track/road"
-
-paw="$PWD/track/paw"
-
-matrix="$PWD/track/matrix"
-
-cannes="$PWD/track/cannes"
-
 #--------------------------------------------------------------------------------------------------
 # Syntax
 #--------------------------------------------------------------------------------------------------
@@ -36,133 +28,88 @@ read -p "Run push for $1 ? (yes/no) " REPLY
 
 if [ "$REPLY" != "yes" ]; then exit 1; fi
 
-#--------------------------------------------------------------------------------------------------
-# road
-#--------------------------------------------------------------------------------------------------
+source="$PWD/track/$1/deploy"
 
-if [ $1 = "road" ]; then
+if [ -d "$source" ]; then
 
-    path="$assets/track/road/deploy"
+    echo "$source"
+
+    path="$assets/track/$1/deploy"
     mkdir -p "$path"
 
-    cp "$road"/deploy/*.mp4 "$path"
-
-    path="$assets/track/road/dist"
-    mkdir -p "$path"
-
-    cp "$road"/dist/*.kra "$path"
-    cp "$road"/dist/*.png "$path"
-
-    path="$assets/track/road/dist/content"
-    mkdir -p "$path"
-
-    cp "$road"/dist/content/*.png "$path"
-    cp "$road"/dist/content/*.mp4 "$path"
+    cp "$source"/*.mp4 "$path"
 fi
 
-#--------------------------------------------------------------------------------------------------
-# paw
-#--------------------------------------------------------------------------------------------------
+source="$PWD/track/$1/dist"
 
-if [ $1 = "paw" ]; then
+if [ -d "$source" ]; then
 
-    path="$assets/track/paw/deploy"
+    echo "$source"
+
+    path="$assets/track/$1/dist"
     mkdir -p "$path"
 
-    cp "$paw"/deploy/*.mp4 "$path"
-
-    path="$assets/track/paw/dist"
-    mkdir -p "$path"
-
-    cp "$paw"/dist/*.kra "$path"
-    cp "$paw"/dist/*.png "$path"
-
-    path="$assets/track/paw/dist/content"
-    mkdir -p "$path"
-
-    cp "$paw"/dist/content/*.png "$path"
-    cp "$paw"/dist/content/*.mp4 "$path"
-
-    path="$assets/track/paw/dist/upscale"
-    mkdir -p "$path"
-
-    cp "$paw"/dist/upscale/*.jpeg "$path"
-
-    path="$assets/track/paw/dist/upscale/base"
-    mkdir -p "$path"
-
-    cp "$paw"/dist/upscale/base/*.png "$path"
+    cp "$source"/*.kra "$path"
+    cp "$source"/*.png "$path"
 fi
 
-#--------------------------------------------------------------------------------------------------
-# matrix
-#--------------------------------------------------------------------------------------------------
+source="$PWD/track/$1/dist/content"
 
-if [ $1 = "matrix" ]; then
+if [ -d "$source" ]; then
 
-    path="$assets/track/matrix/deploy"
+    echo "$source"
+
+    path="$assets/track/$1/dist/content"
     mkdir -p "$path"
 
-    cp "$matrix"/deploy/*.mp4 "$path"
-
-    path="$assets/track/matrix/dist"
-    mkdir -p "$path"
-
-    cp "$matrix"/dist/*.kra "$path"
-    cp "$matrix"/dist/*.png "$path"
-
-    path="$assets/track/matrix/dist/content"
-    mkdir -p "$path"
-
-    cp "$matrix"/dist/content/*.png "$path"
-    cp "$matrix"/dist/content/*.mp4 "$path"
-
-    path="$assets/track/matrix/dist/upscale"
-    mkdir -p "$path"
-
-    cp "$matrix"/dist/upscale/*.jpeg "$path"
-
-    path="$assets/track/matrix/dist/upscale/base"
-    mkdir -p "$path"
-
-    cp "$matrix"/dist/upscale/base/*.png "$path"
+    cp "$source"/*.png "$path"
+    cp "$source"/*.mp4 "$path"
 fi
 
-#--------------------------------------------------------------------------------------------------
-# cannes
-#--------------------------------------------------------------------------------------------------
+source="$PWD/track/$1/dist/upscale"
 
-if [ $1 = "cannes" ]; then
+if [ -d "$source" ]; then
 
-    path="$assets/track/cannes/deploy"
+    echo "$source"
+
+    path="$assets/track/$1/dist/upscale"
     mkdir -p "$path"
 
-    cp "$cannes"/deploy/*.mp4 "$path"
+    cp "$source"/*.jpeg "$path"
+fi
 
-    path="$assets/track/cannes/dist"
+source="$PWD/track/$1/dist/upscale/base"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
+
+    path="$assets/track/$1/dist/upscale/base"
     mkdir -p "$path"
 
-    cp "$cannes"/dist/*.kra "$path"
-    cp "$cannes"/dist/*.png "$path"
+    cp "$source"/*.png "$path"
+fi
 
-    path="$assets/track/cannes/dist/content"
+source="$PWD/track/$1/dist/voice"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
+
+    path="$assets/track/$1/dist/voice"
     mkdir -p "$path"
 
-    cp "$cannes"/dist/content/*.png "$path"
-    cp "$cannes"/dist/content/*.mp4 "$path"
+    cp "$source"/*.mp3 "$path"
+fi
 
-    path="$assets/track/cannes/dist/upscale"
+source="$PWD/track/$1/dist/voice/base"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
+
+    path="$assets/track/$1/dist/voice/base"
     mkdir -p "$path"
 
-    cp "$cannes"/dist/upscale/*.jpeg "$path"
-
-    path="$assets/track/cannes/dist/upscale/base"
-    mkdir -p "$path"
-
-    cp "$cannes"/dist/upscale/base/*.png "$path"
-
-    path="$assets/track/cannes/dist/voice/base"
-    mkdir -p "$path"
-
-    cp "$cannes"/dist/voice/base/*.webm "$path"
+    cp "$source"/*.webm "$path"
 fi
