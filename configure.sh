@@ -109,43 +109,6 @@ if [ $1 = "paw" ]; then
     cp "$paw_extra"/audio/*.webm "$path"
 fi
 
-#--------------------------------------------------------------------------------------------------
-# matrix
-#--------------------------------------------------------------------------------------------------
-
-if [ $1 = "matrix" ]; then
-
-    path="$PWD/track/matrix/deploy"
-
-    cp "$matrix"/deploy/*.mp4 "$path"
-
-    path="$PWD/track/matrix/dist"
-
-    cp "$matrix"/dist/*.kra "$path"
-    cp "$matrix"/dist/*.png "$path"
-
-    path="$PWD/track/matrix/dist/content"
-
-    cp "$matrix"/dist/content/*.png "$path"
-    cp "$matrix"/dist/content/*.mp4 "$path"
-
-    path="$PWD/track/matrix/dist/upscale"
-
-    cp "$matrix"/dist/upscale/*.jpeg "$path"
-
-    path="$PWD/track/matrix/dist/upscale/base"
-
-    cp "$matrix"/dist/upscale/base/*.png "$path"
-
-    path="$PWD/track/matrix/dist/content/extra"
-
-    cp "$matrix_extra"/video/*.mp4 "$path"
-fi
-
-#--------------------------------------------------------------------------------------------------
-# cannes
-#--------------------------------------------------------------------------------------------------
-
 source="$assets/track/$1/deploy"
 
 if [ -d "$source" ]; then
@@ -179,6 +142,18 @@ if [ -d "$source" ]; then
 
     cp "$source"/*.png "$path"
     cp "$source"/*.mp4 "$path"
+fi
+
+source="$assets/track/$1/dist/content/extra"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
+
+    path="$PWD/track/cannes/dist/content/extra"
+
+    cp "$source"/*.mp4  "$path"
+    cp "$source"/*.webm "$path"
 fi
 
 source="$assets/track/$1/dist/upscale"
