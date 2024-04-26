@@ -71,6 +71,7 @@ templates:
         id: clap
         source: https://odysee.com/cannes:a
         ambient: https://www.youtube.com/watch?v=kPh7Ev9rvOM
+        subtitles: https://raw.githubusercontent.com/3unjee/VBML/master/track/cannes/deploy/subtitle/cannes.srt
 
 ZOOM: |
     IF (EQUAL argument "brad")
