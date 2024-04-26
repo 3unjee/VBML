@@ -71,6 +71,7 @@ templates:
         id: clap
         source: /deploy/cannes.mp4
         ambient: /deploy/cannes2.mp4
+        subtitles: /deploy/subtitle/cannes.srt
 
 ZOOM: |
     IF (EQUAL argument "brad")
