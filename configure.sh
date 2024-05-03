@@ -73,7 +73,7 @@ if [ -d "$source" ]; then
 
     echo "$source"
 
-    path="$PWD/track/cannes/dist/content"
+    path="$PWD/track/$1/dist/content"
 
     cp "$source"/*.png "$path"
     cp "$source"/*.mp4 "$path"
@@ -85,7 +85,7 @@ if [ -d "$source" ]; then
 
     echo "$source"
 
-    path="$PWD/track/cannes/dist/upscale"
+    path="$PWD/track/$1/dist/upscale"
 
     cp "$source"/*.jpeg "$path"
 fi
@@ -96,7 +96,7 @@ if [ -d "$source" ]; then
 
     echo "$source"
 
-    path="$PWD/track/cannes/dist/upscale/base"
+    path="$PWD/track/$1/dist/upscale/base"
 
     cp "$source"/*.png "$path"
 fi
@@ -107,7 +107,7 @@ if [ -d "$source" ]; then
 
     echo "$source"
 
-    path="$PWD/track/cannes/dist/voice"
+    path="$PWD/track/$1/dist/voice"
 
     cp "$source"/*.mp3 "$path"
 fi
@@ -118,7 +118,7 @@ if [ -d "$source" ]; then
 
     echo "$source"
 
-    path="$PWD/track/cannes/dist/voice/base"
+    path="$PWD/track/$1/dist/voice/base"
 
     cp "$source"/*.webm "$path"
 fi
@@ -129,7 +129,7 @@ if [ -d "$source" ]; then
 
     echo "$source"
 
-    path="$PWD/track/cannes/dist/content/extra"
+    path="$PWD/track/$1/dist/content/extra"
 
     cp "$source"/*.mp4 "$path"
 fi
@@ -140,7 +140,7 @@ if [ -d "$source" ]; then
 
     echo "$source"
 
-    path="$PWD/track/cannes/dist/content/extra"
+    path="$PWD/track/$1/dist/content/extra"
 
     cp "$source"/*.webm "$path"
 fi
