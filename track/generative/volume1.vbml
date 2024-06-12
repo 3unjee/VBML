@@ -1,0 +1,28 @@
+# vbml 1.0.6
+#--------------------------------------------------------------------------------------------------
+# Visit https://omega.gg/vox for more informations.
+#--------------------------------------------------------------------------------------------------
+
+type: track
+
+title: Generative AI volume 1
+
+cover: https://images.squarespace-cdn.com/content/v1/55bd7005e4b06da83f63b8d9/1718012399373-67ITE9CJM73TN1DM1ZG3/AI+Film+Gallery+%7C+Stormtroopers+-+A+New+Home+.png?format=2500w
+
+source:
+    track:
+        duration: 2:15
+        title: Stormtroopers - A New Home | An AI Documentary
+        source: https://www.youtube.com/watch?&v=0jKObdVwBQU
+    track:
+        duration: 0:59
+        title: Kubrick Homage - 2000 + 1 | An AI Film Concept
+        source: https://x.com/sisboombahbah/status/1796277055685886190
+    track:
+        duration: 0:51
+        title: Fragmented Fables | An AI Short Film
+        source: https://x.com/aashay_singh/status/1797955115107967320
+    track:
+        duration: 2:58
+        title: Lacrimosa | An AI Short Film
+        source: https://twitter.com/AlexeySeverin/status/1798517118826394016

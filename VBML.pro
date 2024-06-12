@@ -11,3 +11,5 @@ OTHER_FILES += configure.sh \
                track/matrix/local.vbml \
                track/cannes/cannes.vbml \
                track/cannes/local.vbml \
+               track/generative/live.vbml \
+               track/generative/volume1.vbml \
