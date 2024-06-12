@@ -14,3 +14,4 @@ timezone: Europe/Paris
 source:
     hub:
         duration: 168:00:00
+        source: https://vox.omega.gg/w/eL7H1yW6ywwTecg8dsRjyB
