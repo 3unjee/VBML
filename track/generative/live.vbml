@@ -5,7 +5,7 @@
 
 type: channel
 
-title: Generative AI
+title: Generative AI 24/7
 
 cover: https://images.squarespace-cdn.com/content/v1/55bd7005e4b06da83f63b8d9/1718012399373-67ITE9CJM73TN1DM1ZG3/AI+Film+Gallery+%7C+Stormtroopers+-+A+New+Home+.png?format=2500w
 
@@ -15,3 +15,4 @@ source:
     hub:
         duration: 168:00:00
         source: https://vox.omega.gg/w/eL7H1yW6ywwTecg8dsRjyB
+        seed: 123
