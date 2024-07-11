@@ -11,7 +11,7 @@ cover: https://images.squarespace-cdn.com/content/v1/55bd7005e4b06da83f63b8d9/17
 
 source:
     track:
-        duration: 2:15
+        duration: 1:55
         title: Stormtroopers - A New Home | An AI Documentary
         source: https://www.youtube.com/watch?&v=0jKObdVwBQU
     track:
@@ -26,3 +26,19 @@ source:
         duration: 2:58
         title: Lacrimosa | An AI Short Film
         source: https://twitter.com/AlexeySeverin/status/1798517118826394016
+    track:
+        duration: 1:15
+        title: The Mandailorian | An AI Trailer
+        source: https://twitter.com/karim_yourself/status/1802352896018698427
+    track:
+        duration: 1:57
+        title: Cats in Black | An AI Short Film
+        source: https://twitter.com/MeanOrangeCat/status/1805272899265417720
+    track:
+        duration: 1:08
+        title: Marking Time | An AI Short Film
+        source: https://www.youtube.com/watch?v=Qh9v3iJTRIM
+    track:
+        duration: 1:20
+        title: The World Is Too Much With Us | An AI Short Film
+        source: https://vimeo.com/887945116
