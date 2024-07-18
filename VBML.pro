@@ -13,3 +13,5 @@ OTHER_FILES += configure.sh \
                track/cannes/local.vbml \
                track/generative/live.vbml \
                track/generative/volume1.vbml \
+               track/chillwave/live.vbml \
+               track/chillwave/volume1.vbml \

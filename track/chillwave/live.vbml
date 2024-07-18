@@ -1,0 +1,18 @@
+# vbml 1.0.6
+#--------------------------------------------------------------------------------------------------
+# Visit https://omega.gg/vox for more informations.
+#--------------------------------------------------------------------------------------------------
+
+type: channel
+
+title: Chillwave 24/7
+
+cover: https://i.ytimg.com/vi/n5vjV4hwRxo/maxresdefault.jpg
+
+timezone: Europe/Paris
+
+source:
+    hub:
+        duration: 168:00:00
+        source: https://vox.omega.gg/w/eL7H1yW6ywwTecg8dsRjyB
+        seed: 123

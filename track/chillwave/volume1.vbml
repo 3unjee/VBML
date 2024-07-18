@@ -1,0 +1,16 @@
+# vbml 1.0.6
+#--------------------------------------------------------------------------------------------------
+# Visit https://omega.gg/vox for more informations.
+#--------------------------------------------------------------------------------------------------
+
+type: track
+
+title: Chillwave volume 1
+
+cover: https://i.ytimg.com/vi/n5vjV4hwRxo/maxresdefault.jpg
+
+source:
+    track:
+        duration: 5:09
+        title: Downtown Binary - Skyward
+        source: https://www.youtube.com/watch?v=q9fa0xLuJPA
