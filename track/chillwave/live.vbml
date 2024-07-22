@@ -14,5 +14,4 @@ timezone: Europe/Paris
 source:
     hub:
         duration: 168:00:00
-        source: https://vox.omega.gg/w/taxKd6dDyCV8GZ7Qhd3u29
-        seed: 123
+        source: https://raw.githubusercontent.com/3unjee/VBML/master/track/generative/roster.vbml
