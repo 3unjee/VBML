@@ -15,4 +15,5 @@ OTHER_FILES += configure.sh \
                track/generative/roster.vbml \
                track/generative/volume1.vbml \
                track/chillwave/live.vbml \
+               track/chillwave/roster.vbml \
                track/chillwave/volume1.vbml \

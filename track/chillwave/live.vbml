@@ -14,4 +14,4 @@ timezone: Europe/Paris
 source:
     hub:
         duration: 168:00:00
-        source: https://raw.githubusercontent.com/3unjee/VBML/master/track/generative/roster.vbml
+        source: https://raw.githubusercontent.com/3unjee/VBML/master/track/chillwave/roster.vbml

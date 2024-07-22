@@ -1,0 +1,54 @@
+# vbml 1.0.6
+#--------------------------------------------------------------------------------------------------
+# Visit https://omega.gg/vox for more informations.
+#--------------------------------------------------------------------------------------------------
+
+type: track
+
+seed: 123
+
+source:
+    track:
+        duration: 5:09
+        title: Downtown Binary - Skyward
+        source: https://www.youtube.com/watch?v=q9fa0xLuJPA
+    track:
+        duration: 4:20
+        title: Euan Ellis - Perseverance
+        source: https://www.youtube.com/watch?v=Fhg66-JAHQM
+    track:
+        duration: 4:13
+        title: Krosia - Night Sky (feat. A.L.I.S.O.N)
+        source: https://www.youtube.com/watch?v=5s0p15QwD4Y
+    track:
+        duration: 5:37
+        title: (Synthwave) Jasper Mitchell - Triton
+        source: https://www.youtube.com/watch?v=GU9vSFOia9c
+    track:
+        duration: 3:30
+        title: AK - Discovery
+        source: https://www.youtube.com/watch?v=nyVfXzDrssw
+    track:
+        duration: 3:40
+        title: Jasper De Ceuster - Flare
+        source: https://www.youtube.com/watch?v=HAoUHZR3irA
+    track:
+        duration: 5:49
+        title: Downtown Binary - Lost
+        source: https://www.youtube.com/watch?v=K_I9FHqxFWA
+    track:
+        duration: 2:31
+        title: Doomroar - Over
+        source: https://www.youtube.com/watch?v=kplMjk5nNT8
+    track:
+        duration: 3:45
+        title: ALPHA ROOM - Small Steps
+        source: https://www.youtube.com/watch?v=p5tuvznAugg
+    track:
+        duration: 4:32
+        title: FRM - Transistors
+        source: https://www.youtube.com/watch?v=mZba7GfCWJk
+    track:
+        duration: 3:40
+        title: Adieu Aru - Release
+        source: https://www.youtube.com/watch?v=SK4pIRTiEtQ
