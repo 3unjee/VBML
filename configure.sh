@@ -88,6 +88,20 @@ if [ -d "$source" ]; then
     cp "$source"/*.mp4 "$path"
 fi
 
+source="$assets/track/$1/dist/content/upscale"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
+
+    path="$PWD/track/$1/dist/content/upscale"
+
+    if exists "$source"/*.mp4; then
+
+        cp "$source"/*.mp4 "$path"
+    fi
+fi
+
 source="$assets/track/$1/dist/upscale"
 
 if [ -d "$source" ]; then
@@ -96,15 +110,7 @@ if [ -d "$source" ]; then
 
     path="$PWD/track/$1/dist/upscale"
 
-    if exists "$source"/*.jpeg; then
-
-        cp "$source"/*.jpeg "$path"
-    fi
-
-    if exists "$source"/*.mp4; then
-
-        cp "$source"/*.mp4 "$path"
-    fi
+    cp "$source"/*.jpeg "$path"
 fi
 
 source="$assets/track/$1/dist/upscale/base"
