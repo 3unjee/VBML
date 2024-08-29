@@ -5,6 +5,8 @@ OTHER_FILES += configure.sh \
                extra.md \
                track/road/road.vbml \
                track/road/local.vbml \
+               track/road/dist/content/upscale.sh \
+               track/road/dist/content/copy.sh \
                track/paw/paw.vbml \
                track/paw/local.vbml \
                track/matrix/matrix.vbml \
