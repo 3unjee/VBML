@@ -125,7 +125,10 @@ if [ -d "$source" ]; then
 
     path="$PWD/track/$1/dist/upscale"
 
-    cp "$source"/*.jpeg "$path"
+    if exists "$source"/*.jpeg; then
+
+        cp "$source"/*.jpeg "$path"
+    fi
 fi
 
 source="$assets/track/$1/dist/upscale/base"
@@ -136,7 +139,10 @@ if [ -d "$source" ]; then
 
     path="$PWD/track/$1/dist/upscale/base"
 
-    cp "$source"/*.png "$path"
+    if exists "$source"/*.png; then
+
+        cp "$source"/*.png "$path"
+    fi
 fi
 
 source="$assets/track/$1/dist/voice"
