@@ -150,6 +150,11 @@ if [ -d "$source" ]; then
 
         cp "$source"/*.png "$path"
     fi
+
+    if exists "$source"/*.jpg; then
+
+        cp "$source"/*.jpg "$path"
+    fi
 fi
 
 source="$assets/track/$1/dist/voice"
