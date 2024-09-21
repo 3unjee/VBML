@@ -24,13 +24,15 @@ if [ $# != 1 ] || [ $1 != "all"    -a \
                     $1 != "road"   -a \
                     $1 != "paw"    -a \
                     $1 != "matrix" -a \
-                    $1 != "cannes" ]; then
+                    $1 != "cannes" -a \
+                    $1 != "pokemon" ]; then
 
     echo "Usage: configure <all>"
     echo "                 <road>"
     echo "                 <paw>"
     echo "                 <matrix>"
     echo "                 <cannes>"
+    echo "                 <pokemon>"
 
     exit 1
 fi
@@ -49,6 +51,7 @@ if [ $1 = "all" ]; then
     sh configure.sh paw
     sh configure.sh matrix
     sh configure.sh cannes
+    sh configure.sh pokemon
 
     exit 0
 fi
@@ -72,8 +75,20 @@ if [ -d "$source" ]; then
 
     path="$PWD/track/$1/dist"
 
-    cp "$source"/*.kra "$path"
-    cp "$source"/*.png "$path"
+    if exists "$source"/*.kra; then
+
+        cp "$source"/*.kra "$path"
+    fi
+
+    if exists "$source"/*.png; then
+
+        cp "$source"/*.png "$path"
+    fi
+
+    if exists "$source"/*.jpg; then
+
+        cp "$source"/*.jpg "$path"
+    fi
 fi
 
 source="$assets/track/$1/dist/content"

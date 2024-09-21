@@ -23,12 +23,14 @@ exists()
 if [ $# != 1 ] || [ $1 != "road"   -a \
                     $1 != "paw"    -a \
                     $1 != "matrix" -a \
-                    $1 != "cannes" ]; then
+                    $1 != "cannes" -a \
+                    $1 != "pokemon" ]; then
 
     echo "Usage: push <road>"
     echo "            <paw>"
     echo "            <matrix>"
     echo "            <cannes>"
+    echo "            <pokemon>"
 
     exit 1
 fi
@@ -58,8 +60,20 @@ if [ -d "$source" ]; then
     path="$assets/track/$1/dist"
     mkdir -p "$path"
 
-    cp "$source"/*.kra "$path"
-    cp "$source"/*.png "$path"
+    if exists "$source"/*.kra; then
+
+        cp "$source"/*.kra "$path"
+    fi
+
+    if exists "$source"/*.png; then
+
+        cp "$source"/*.png "$path"
+    fi
+
+    if exists "$source"/*.jpg; then
+
+        cp "$source"/*.jpg "$path"
+    fi
 fi
 
 source="$PWD/track/$1/dist/content"
@@ -99,7 +113,10 @@ if [ -d "$source" ]; then
     path="$assets/track/$1/dist/upscale"
     mkdir -p "$path"
 
-    cp "$source"/*.jpeg "$path"
+    if exists "$source"/*.jpeg; then
+
+        cp "$source"/*.jpeg "$path"
+    fi
 fi
 
 source="$PWD/track/$1/dist/upscale/base"
@@ -111,7 +128,10 @@ if [ -d "$source" ]; then
     path="$assets/track/$1/dist/upscale/base"
     mkdir -p "$path"
 
-    cp "$source"/*.png "$path"
+    if exists "$source"/*.png; then
+
+        cp "$source"/*.png "$path"
+    fi
 fi
 
 source="$PWD/track/$1/dist/voice"
