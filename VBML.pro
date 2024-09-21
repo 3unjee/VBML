@@ -19,3 +19,5 @@ OTHER_FILES += configure.sh \
                track/chillwave/live.vbml \
                track/chillwave/roster.vbml \
                track/chillwave/volume1.vbml \
+               track/pokemon/dist/content/upscale.sh \
+               track/pokemon/dist/content/copy.sh \
