@@ -85,8 +85,15 @@ if [ -d "$source" ]; then
     path="$assets/track/$1/dist/content"
     mkdir -p "$path"
 
-    cp "$source"/*.png "$path"
-    cp "$source"/*.mp4 "$path"
+    if exists "$source"/*.png; then
+
+        cp "$source"/*.png "$path"
+    fi
+
+    if exists "$source"/*.mp4; then
+
+        cp "$source"/*.mp4 "$path"
+    fi
 fi
 
 source="$PWD/track/$1/dist/content/upscale"
