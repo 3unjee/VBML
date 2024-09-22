@@ -1,0 +1,1178 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mlt LC_NUMERIC="en_US.UTF-8" producer="main_bin" version="7.21.0" root="C:/dev/workspace/VBML-bunjee/track/pokemon/dist">
+ <profile frame_rate_num="30" sample_aspect_num="1" display_aspect_den="9" colorspace="709" progressive="0" description="HD 1080i 30 fps" display_aspect_num="16" frame_rate_den="1" width="1920" height="1080" sample_aspect_den="1"/>
+ <producer id="producer0" in="00:00:00.000" out="00:17:19.433">
+  <property name="length">2147483647</property>
+  <property name="eof">continue</property>
+  <property name="resource">black</property>
+  <property name="aspect_ratio">1</property>
+  <property name="mlt_service">color</property>
+  <property name="kdenlive:playlistid">black_track</property>
+  <property name="mlt_image_format">rgba</property>
+  <property name="set.test_audio">0</property>
+ </producer>
+ <playlist id="playlist0">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <playlist id="playlist1">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <tractor id="tractor0" in="00:00:00.000">
+  <property name="kdenlive:audio_track">1</property>
+  <property name="kdenlive:trackheight">67</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="video" producer="playlist0"/>
+  <track hide="video" producer="playlist1"/>
+  <filter id="filter0">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+   <property name="mlt_service">volume</property>
+   <property name="internal_added">237</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter1">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+   <property name="internal_added">237</property>
+   <property name="start">0.5</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter2">
+   <property name="iec_scale">0</property>
+   <property name="mlt_service">audiolevel</property>
+   <property name="dbpeak">1</property>
+   <property name="disable">1</property>
+  </filter>
+ </tractor>
+ <chain id="chain0" out="00:00:02.767">
+  <property name="length">84</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/cb_094.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">12</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">27092</property>
+  <property name="kdenlive:file_hash">e812c043adb24159838c00bb3fca966f</property>
+  <property name="kdenlive:audio_max0">220</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain1" out="00:00:02.567">
+  <property name="length">78</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/cb_101.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">13</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">25708</property>
+  <property name="kdenlive:file_hash">fd7723a471307c67567fbf0be1d1b91a</property>
+  <property name="kdenlive:audio_max0">219</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain2" out="00:00:04.200">
+  <property name="length">127</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/cb_120.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">14</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">38927</property>
+  <property name="kdenlive:file_hash">6d69d18eef78cb491e7bec6296f613a6</property>
+  <property name="kdenlive:audio_max0">213</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain3" out="00:00:01.733">
+  <property name="length">53</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/cb_130.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">15</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">19430</property>
+  <property name="kdenlive:file_hash">32a4ba3c2778c31c4e6c08522fad81ae</property>
+  <property name="kdenlive:audio_max0">216</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain4" out="00:00:03.267">
+  <property name="length">99</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/eb_030.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">16</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">30757</property>
+  <property name="kdenlive:file_hash">ac34aae026939234a48f3e81f8e6dc10</property>
+  <property name="kdenlive:audio_max0">209</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain5" out="00:00:02.600">
+  <property name="length">79</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_020.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">17</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">25428</property>
+  <property name="kdenlive:file_hash">c8c57f2a228c454450b3e74dcd7a4fb3</property>
+  <property name="kdenlive:audio_max0">217</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain6" out="00:00:00.667">
+  <property name="length">21</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_024.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">18</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">9461</property>
+  <property name="kdenlive:file_hash">6fb73d3e6d71a2c18afa96cb4c7a83e6</property>
+  <property name="kdenlive:audio_max0">209</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain7" out="00:00:00.900">
+  <property name="length">28</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_027.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">4</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">11188</property>
+  <property name="kdenlive:file_hash">4e8d15be6eaacfb01e251d7ef0b788bd</property>
+  <property name="kdenlive:audio_max0">212</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain8" out="00:00:01.433">
+  <property name="length">44</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_030.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">5</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">15806</property>
+  <property name="kdenlive:file_hash">4bacce46719d01c91ae8d502f24ad7ea</property>
+  <property name="kdenlive:audio_max0">220</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain9" out="00:00:03.000">
+  <property name="length">91</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_060.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">6</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">26660</property>
+  <property name="kdenlive:file_hash">26b8789804a819efa688064119cfc16c</property>
+  <property name="kdenlive:audio_max0">220</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain10" out="00:00:03.067">
+  <property name="length">93</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_070.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">7</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">29858</property>
+  <property name="kdenlive:file_hash">f2befedd1e352e49ea7958e4be5c766a</property>
+  <property name="kdenlive:audio_max0">217</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain11" out="00:00:03.333">
+  <property name="length">101</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_140.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">8</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">31163</property>
+  <property name="kdenlive:file_hash">d582ce0a8c4831a50d3356eeb4bc2cc4</property>
+  <property name="kdenlive:audio_max0">221</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain12" out="00:00:03.067">
+  <property name="length">93</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_160.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">9</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">28005</property>
+  <property name="kdenlive:file_hash">8ba8ae3dc959066a72abee67809f6386</property>
+  <property name="kdenlive:audio_max0">216</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain13" out="00:00:02.867">
+  <property name="length">87</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/kb_060.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">10</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">27640</property>
+  <property name="kdenlive:file_hash">22f14da20eaf5c714d5ae90a83b2676d</property>
+  <property name="kdenlive:audio_max0">225</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <chain id="chain14" out="00:00:03.467">
+  <property name="length">105</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/kb_120.ogg</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">11</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">33544</property>
+  <property name="kdenlive:file_hash">5062fa50c267eca1499f8696935dba0f</property>
+  <property name="kdenlive:audio_max0">215</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="xml">was here</property>
+  <property name="mute_on_pause">0</property>
+  <property name="set.test_audio">0</property>
+  <property name="set.test_image">1</property>
+ </chain>
+ <playlist id="playlist2">
+  <property name="kdenlive:audio_track">1</property>
+  <entry producer="chain0" in="00:00:00.000" out="00:00:02.767">
+   <property name="kdenlive:id">12</property>
+  </entry>
+  <entry producer="chain1" in="00:00:00.000" out="00:00:02.567">
+   <property name="kdenlive:id">13</property>
+  </entry>
+  <entry producer="chain2" in="00:00:00.000" out="00:00:04.200">
+   <property name="kdenlive:id">14</property>
+  </entry>
+  <entry producer="chain3" in="00:00:00.000" out="00:00:01.733">
+   <property name="kdenlive:id">15</property>
+  </entry>
+  <entry producer="chain4" in="00:00:00.000" out="00:00:03.267">
+   <property name="kdenlive:id">16</property>
+  </entry>
+  <entry producer="chain5" in="00:00:00.000" out="00:00:02.600">
+   <property name="kdenlive:id">17</property>
+  </entry>
+  <entry producer="chain6" in="00:00:00.000" out="00:00:00.667">
+   <property name="kdenlive:id">18</property>
+  </entry>
+  <entry producer="chain7" in="00:00:00.000" out="00:00:00.900">
+   <property name="kdenlive:id">4</property>
+  </entry>
+  <entry producer="chain8" in="00:00:00.000" out="00:00:01.433">
+   <property name="kdenlive:id">5</property>
+  </entry>
+  <entry producer="chain9" in="00:00:00.000" out="00:00:03.000">
+   <property name="kdenlive:id">6</property>
+  </entry>
+  <entry producer="chain10" in="00:00:00.000" out="00:00:03.067">
+   <property name="kdenlive:id">7</property>
+  </entry>
+  <entry producer="chain11" in="00:00:00.000" out="00:00:03.333">
+   <property name="kdenlive:id">8</property>
+  </entry>
+  <entry producer="chain12" in="00:00:00.000" out="00:00:03.067">
+   <property name="kdenlive:id">9</property>
+  </entry>
+  <entry producer="chain13" in="00:00:00.000" out="00:00:02.867">
+   <property name="kdenlive:id">10</property>
+  </entry>
+  <entry producer="chain14" in="00:00:00.000" out="00:00:03.467">
+   <property name="kdenlive:id">11</property>
+  </entry>
+ </playlist>
+ <playlist id="playlist3">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <tractor id="tractor1" in="00:00:00.000" out="00:00:39.400">
+  <property name="kdenlive:audio_track">1</property>
+  <property name="kdenlive:trackheight">67</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="video" producer="playlist2"/>
+  <track hide="video" producer="playlist3"/>
+  <filter id="filter3">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+   <property name="mlt_service">volume</property>
+   <property name="internal_added">237</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter4">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+   <property name="internal_added">237</property>
+   <property name="start">0.5</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter5">
+   <property name="iec_scale">0</property>
+   <property name="mlt_service">audiolevel</property>
+   <property name="dbpeak">1</property>
+   <property name="disable">1</property>
+  </filter>
+ </tractor>
+ <playlist id="playlist4"/>
+ <playlist id="playlist5"/>
+ <tractor id="tractor2" in="00:00:00.000">
+  <property name="kdenlive:trackheight">67</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="audio" producer="playlist4"/>
+  <track hide="audio" producer="playlist5"/>
+ </tractor>
+ <playlist id="playlist6"/>
+ <playlist id="playlist7"/>
+ <tractor id="tractor3" in="00:00:00.000">
+  <property name="kdenlive:trackheight">67</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="audio" producer="playlist6"/>
+  <track hide="audio" producer="playlist7"/>
+ </tractor>
+ <tractor id="{dfcfdbc9-0407-4af2-951e-cab046d7dd9e}" in="00:00:00.000" out="00:00:39.400">
+  <property name="kdenlive:uuid">{dfcfdbc9-0407-4af2-951e-cab046d7dd9e}</property>
+  <property name="kdenlive:clipname">Sequence 1</property>
+  <property name="kdenlive:sequenceproperties.hasAudio">1</property>
+  <property name="kdenlive:sequenceproperties.hasVideo">1</property>
+  <property name="kdenlive:sequenceproperties.activeTrack">1</property>
+  <property name="kdenlive:sequenceproperties.tracksCount">4</property>
+  <property name="kdenlive:sequenceproperties.documentuuid">{dfcfdbc9-0407-4af2-951e-cab046d7dd9e}</property>
+  <property name="kdenlive:duration">00:00:39:13</property>
+  <property name="kdenlive:maxduration">1183</property>
+  <property name="kdenlive:producer_type">17</property>
+  <property name="kdenlive:id">3</property>
+  <property name="kdenlive:clip_type">0</property>
+  <property name="kdenlive:file_hash">f48e62f6ec29c39fd22d17921ecd1824</property>
+  <property name="kdenlive:folderid">2</property>
+  <property name="kdenlive:sequenceproperties.audioTarget">1</property>
+  <property name="kdenlive:sequenceproperties.tracks">4</property>
+  <property name="kdenlive:sequenceproperties.verticalzoom">1</property>
+  <property name="kdenlive:sequenceproperties.videoTarget">2</property>
+  <property name="kdenlive:sequenceproperties.zonein">0</property>
+  <property name="kdenlive:sequenceproperties.zoneout">75</property>
+  <property name="kdenlive:sequenceproperties.zoom">8</property>
+  <property name="kdenlive:sequenceproperties.groups">[
+]
+</property>
+  <property name="kdenlive:sequenceproperties.guides">[
+]
+</property>
+  <property name="kdenlive:sequenceproperties.position">1182</property>
+  <property name="kdenlive:sequenceproperties.scrollPos">0</property>
+  <property name="kdenlive:sequenceproperties.disablepreview">0</property>
+  <track producer="producer0"/>
+  <track producer="tractor0"/>
+  <track producer="tractor1"/>
+  <track producer="tractor2"/>
+  <track producer="tractor3"/>
+  <transition id="transition0">
+   <property name="a_track">0</property>
+   <property name="b_track">1</property>
+   <property name="mlt_service">mix</property>
+   <property name="kdenlive_id">mix</property>
+   <property name="internal_added">237</property>
+   <property name="always_active">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="transition1">
+   <property name="a_track">0</property>
+   <property name="b_track">2</property>
+   <property name="mlt_service">mix</property>
+   <property name="kdenlive_id">mix</property>
+   <property name="internal_added">237</property>
+   <property name="always_active">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="transition2">
+   <property name="a_track">0</property>
+   <property name="b_track">3</property>
+   <property name="compositing">0</property>
+   <property name="distort">0</property>
+   <property name="rotate_center">0</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition3">
+   <property name="a_track">0</property>
+   <property name="b_track">4</property>
+   <property name="compositing">0</property>
+   <property name="distort">0</property>
+   <property name="rotate_center">0</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <filter id="filter6">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+   <property name="mlt_service">volume</property>
+   <property name="internal_added">237</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter7">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+   <property name="internal_added">237</property>
+   <property name="start">0.5</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter8">
+   <property name="mlt_service">avfilter.fieldorder</property>
+   <property name="internal_added">237</property>
+   <property name="av.order">tff</property>
+  </filter>
+ </tractor>
+ <chain id="chain15" out="00:00:00.900">
+  <property name="length">28</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_027.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">4</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">11188</property>
+  <property name="kdenlive:file_hash">4e8d15be6eaacfb01e251d7ef0b788bd</property>
+  <property name="kdenlive:audio_max0">212</property>
+ </chain>
+ <chain id="chain16" out="00:00:01.433">
+  <property name="length">44</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_030.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">5</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">15806</property>
+  <property name="kdenlive:file_hash">4bacce46719d01c91ae8d502f24ad7ea</property>
+  <property name="kdenlive:audio_max0">220</property>
+ </chain>
+ <chain id="chain17" out="00:00:03.000">
+  <property name="length">91</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_060.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">6</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">26660</property>
+  <property name="kdenlive:file_hash">26b8789804a819efa688064119cfc16c</property>
+  <property name="kdenlive:audio_max0">220</property>
+ </chain>
+ <chain id="chain18" out="00:00:03.067">
+  <property name="length">93</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_070.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">7</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">29858</property>
+  <property name="kdenlive:file_hash">f2befedd1e352e49ea7958e4be5c766a</property>
+  <property name="kdenlive:audio_max0">217</property>
+ </chain>
+ <chain id="chain19" out="00:00:03.333">
+  <property name="length">101</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_140.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">8</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">31163</property>
+  <property name="kdenlive:file_hash">d582ce0a8c4831a50d3356eeb4bc2cc4</property>
+  <property name="kdenlive:audio_max0">221</property>
+ </chain>
+ <chain id="chain20" out="00:00:03.067">
+  <property name="length">93</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_160.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">9</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">28005</property>
+  <property name="kdenlive:file_hash">8ba8ae3dc959066a72abee67809f6386</property>
+  <property name="kdenlive:audio_max0">216</property>
+ </chain>
+ <chain id="chain21" out="00:00:02.867">
+  <property name="length">87</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/kb_060.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">10</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">27640</property>
+  <property name="kdenlive:file_hash">22f14da20eaf5c714d5ae90a83b2676d</property>
+  <property name="kdenlive:audio_max0">225</property>
+ </chain>
+ <chain id="chain22" out="00:00:03.467">
+  <property name="length">105</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/kb_120.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">11</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">33544</property>
+  <property name="kdenlive:file_hash">5062fa50c267eca1499f8696935dba0f</property>
+  <property name="kdenlive:audio_max0">215</property>
+ </chain>
+ <chain id="chain23" out="00:00:02.767">
+  <property name="length">84</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/cb_094.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">12</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">27092</property>
+  <property name="kdenlive:file_hash">e812c043adb24159838c00bb3fca966f</property>
+  <property name="kdenlive:audio_max0">220</property>
+ </chain>
+ <chain id="chain24" out="00:00:02.567">
+  <property name="length">78</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/cb_101.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">13</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">25708</property>
+  <property name="kdenlive:file_hash">fd7723a471307c67567fbf0be1d1b91a</property>
+  <property name="kdenlive:audio_max0">219</property>
+ </chain>
+ <chain id="chain25" out="00:00:04.200">
+  <property name="length">127</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/cb_120.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">14</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">38927</property>
+  <property name="kdenlive:file_hash">6d69d18eef78cb491e7bec6296f613a6</property>
+  <property name="kdenlive:audio_max0">213</property>
+ </chain>
+ <chain id="chain26" out="00:00:01.733">
+  <property name="length">53</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/cb_130.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">15</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">19430</property>
+  <property name="kdenlive:file_hash">32a4ba3c2778c31c4e6c08522fad81ae</property>
+  <property name="kdenlive:audio_max0">216</property>
+ </chain>
+ <chain id="chain27" out="00:00:03.267">
+  <property name="length">99</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/eb_030.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">16</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">30757</property>
+  <property name="kdenlive:file_hash">ac34aae026939234a48f3e81f8e6dc10</property>
+  <property name="kdenlive:audio_max0">209</property>
+ </chain>
+ <chain id="chain28" out="00:00:02.600">
+  <property name="length">79</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_020.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">17</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">25428</property>
+  <property name="kdenlive:file_hash">c8c57f2a228c454450b3e74dcd7a4fb3</property>
+  <property name="kdenlive:audio_max0">217</property>
+ </chain>
+ <chain id="chain29" out="00:00:00.667">
+  <property name="length">21</property>
+  <property name="eof">pause</property>
+  <property name="resource">content/voice/h1b_024.ogg</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">32000</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">72000</property>
+  <property name="meta.attr.0.stream.Comment.markup">Processed by SoX</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">18</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">9461</property>
+  <property name="kdenlive:file_hash">6fb73d3e6d71a2c18afa96cb4c7a83e6</property>
+  <property name="kdenlive:audio_max0">209</property>
+ </chain>
+ <playlist id="main_bin">
+  <property name="kdenlive:folder.-1.2">Sequences</property>
+  <property name="kdenlive:sequenceFolder">2</property>
+  <property name="kdenlive:docproperties.audioChannels">2</property>
+  <property name="kdenlive:docproperties.browserurl">C:/Users/barnaud/Videos/</property>
+  <property name="kdenlive:docproperties.compositing">1</property>
+  <property name="kdenlive:docproperties.documentid">1727016361721</property>
+  <property name="kdenlive:docproperties.enableTimelineZone">0</property>
+  <property name="kdenlive:docproperties.enableexternalproxy">0</property>
+  <property name="kdenlive:docproperties.enableproxy">0</property>
+  <property name="kdenlive:docproperties.externalproxyparams"/>
+  <property name="kdenlive:docproperties.generateimageproxy">0</property>
+  <property name="kdenlive:docproperties.generateproxy">0</property>
+  <property name="kdenlive:docproperties.guidesCategories">[
+    {
+        "color": "#9b59b6",
+        "comment": "Category 1",
+        "index": 0
+    },
+    {
+        "color": "#3daee9",
+        "comment": "Category 2",
+        "index": 1
+    },
+    {
+        "color": "#1abc9c",
+        "comment": "Category 3",
+        "index": 2
+    },
+    {
+        "color": "#1cdc9a",
+        "comment": "Category 4",
+        "index": 3
+    },
+    {
+        "color": "#c9ce3b",
+        "comment": "Category 5",
+        "index": 4
+    },
+    {
+        "color": "#fdbc4b",
+        "comment": "Category 6",
+        "index": 5
+    },
+    {
+        "color": "#f39c1f",
+        "comment": "Category 7",
+        "index": 6
+    },
+    {
+        "color": "#f47750",
+        "comment": "Category 8",
+        "index": 7
+    },
+    {
+        "color": "#da4453",
+        "comment": "Category 9",
+        "index": 8
+    }
+]
+</property>
+  <property name="kdenlive:docproperties.kdenliveversion">23.08.5</property>
+  <property name="kdenlive:docproperties.previewextension"/>
+  <property name="kdenlive:docproperties.previewparameters"/>
+  <property name="kdenlive:docproperties.profile">atsc_1080i_60</property>
+  <property name="kdenlive:docproperties.proxyextension"/>
+  <property name="kdenlive:docproperties.proxyimageminsize">2000</property>
+  <property name="kdenlive:docproperties.proxyimagesize">800</property>
+  <property name="kdenlive:docproperties.proxyminsize">1000</property>
+  <property name="kdenlive:docproperties.proxyparams"/>
+  <property name="kdenlive:docproperties.proxyresize">640</property>
+  <property name="kdenlive:docproperties.seekOffset">30000</property>
+  <property name="kdenlive:docproperties.uuid">{dfcfdbc9-0407-4af2-951e-cab046d7dd9e}</property>
+  <property name="kdenlive:docproperties.version">1.1</property>
+  <property name="kdenlive:expandedFolders"/>
+  <property name="kdenlive:binZoom">4</property>
+  <property name="kdenlive:documentnotes"/>
+  <property name="kdenlive:docproperties.opensequences">{dfcfdbc9-0407-4af2-951e-cab046d7dd9e}</property>
+  <property name="kdenlive:docproperties.activetimeline">{dfcfdbc9-0407-4af2-951e-cab046d7dd9e}</property>
+  <property name="kdenlive:docproperties.rendercategory">Audio only</property>
+  <property name="kdenlive:docproperties.rendercustomquality">-1</property>
+  <property name="kdenlive:docproperties.renderendguide">-1</property>
+  <property name="kdenlive:docproperties.renderexportaudio">0</property>
+  <property name="kdenlive:docproperties.renderfullcolorrange">0</property>
+  <property name="kdenlive:docproperties.rendermode">0</property>
+  <property name="kdenlive:docproperties.renderplay">0</property>
+  <property name="kdenlive:docproperties.renderpreview">0</property>
+  <property name="kdenlive:docproperties.renderprofile">MP3</property>
+  <property name="kdenlive:docproperties.renderrescale">0</property>
+  <property name="kdenlive:docproperties.renderrescaleheight">540</property>
+  <property name="kdenlive:docproperties.renderrescalewidth">960</property>
+  <property name="kdenlive:docproperties.renderspeed">6</property>
+  <property name="kdenlive:docproperties.renderstartguide">-1</property>
+  <property name="kdenlive:docproperties.rendertcoverlay">0</property>
+  <property name="kdenlive:docproperties.rendertctype">-1</property>
+  <property name="kdenlive:docproperties.rendertwopass">0</property>
+  <property name="kdenlive:docproperties.renderurl">C:/dev/workspace/VBML-bunjee/track/pokemon/deploy/announcer.mp3</property>
+  <property name="xml_retain">1</property>
+  <entry producer="{dfcfdbc9-0407-4af2-951e-cab046d7dd9e}" in="00:00:00.000" out="00:00:00.000"/>
+  <entry producer="chain15" in="00:00:00.000" out="00:00:00.900"/>
+  <entry producer="chain16" in="00:00:00.000" out="00:00:01.433"/>
+  <entry producer="chain17" in="00:00:00.000" out="00:00:03.000"/>
+  <entry producer="chain18" in="00:00:00.000" out="00:00:03.067"/>
+  <entry producer="chain19" in="00:00:00.000" out="00:00:03.333"/>
+  <entry producer="chain20" in="00:00:00.000" out="00:00:03.067"/>
+  <entry producer="chain21" in="00:00:00.000" out="00:00:02.867"/>
+  <entry producer="chain22" in="00:00:00.000" out="00:00:03.467"/>
+  <entry producer="chain23" in="00:00:00.000" out="00:00:02.767"/>
+  <entry producer="chain24" in="00:00:00.000" out="00:00:02.567"/>
+  <entry producer="chain25" in="00:00:00.000" out="00:00:04.200"/>
+  <entry producer="chain26" in="00:00:00.000" out="00:00:01.733"/>
+  <entry producer="chain27" in="00:00:00.000" out="00:00:03.267"/>
+  <entry producer="chain28" in="00:00:00.000" out="00:00:02.600"/>
+  <entry producer="chain29" in="00:00:00.000" out="00:00:00.667"/>
+ </playlist>
+ <tractor id="tractor4" in="00:00:00.000" out="00:00:39.400">
+  <property name="kdenlive:projectTractor">1</property>
+  <track producer="{dfcfdbc9-0407-4af2-951e-cab046d7dd9e}" in="00:00:00.000" out="00:00:39.400"/>
+ </tractor>
+</mlt>
