@@ -133,6 +133,25 @@ if [ -d "$source" ]; then
 #    fi
 fi
 
+source="$assets/track/$1/dist/content/voice"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
+
+    path="$PWD/track/$1/dist/content/voice"
+
+    if exists "$source"/*.mp3; then
+
+        cp "$source"/*.mp3 "$path"
+    fi
+
+    if exists "$source"/*.ogg; then
+
+        cp "$source"/*.ogg "$path"
+    fi
+fi
+
 source="$assets/track/$1/dist/upscale"
 
 if [ -d "$source" ]; then
