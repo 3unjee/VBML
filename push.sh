@@ -140,6 +140,21 @@ if [ -d "$source" ]; then
     fi
 fi
 
+source="$PWD/track/$1/dist/content/music"
+
+if [ -d "$source" ]; then
+
+    echo "$source"
+
+    path="$assets/track/$1/dist/content/music"
+    mkdir -p "$path"
+
+    if exists "$source"/*.mp3; then
+
+        cp "$source"/*.mp3 "$path"
+    fi
+fi
+
 source="$PWD/track/$1/dist/upscale"
 
 if [ -d "$source" ]; then
