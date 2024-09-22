@@ -48,7 +48,15 @@ if [ -d "$source" ]; then
     path="$assets/track/$1/deploy"
     mkdir -p "$path"
 
-    cp "$source"/*.mp4 "$path"
+    if exists "$source"/*.mp4; then
+
+        cp "$source"/*.mp4 "$path"
+    fi
+
+    if exists "$source"/*.mp3; then
+
+        cp "$source"/*.mp3 "$path"
+    fi
 fi
 
 source="$PWD/track/$1/dist"
@@ -156,7 +164,15 @@ if [ -d "$source" ]; then
     path="$assets/track/$1/dist/voice"
     mkdir -p "$path"
 
-    cp "$source"/*.mp3 "$path"
+    if exists "$source"/*.mp3; then
+
+        cp "$source"/*.mp3 "$path"
+    fi
+
+    if exists "$source"/*.ogg; then
+
+        cp "$source"/*.ogg "$path"
+    fi
 fi
 
 source="$PWD/track/$1/dist/voice/base"
