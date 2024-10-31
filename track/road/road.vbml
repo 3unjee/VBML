@@ -77,7 +77,7 @@ templates:
     template:
         id: road
         source: https://www.youtube.com/watch?v=xfP2ZOngzi8
-        ambient: https://www.youtube.com/watch?v=4xDzrJKXOOY
+        ambient: https://raw.githubusercontent.com/3unjee/VBML/refs/heads/master/track/chillwave/live.vbml
 
 SWAP: |
     IF (EQUAL id "road")
